@@ -2,35 +2,42 @@
   margin: 0;
   padding: 0;
 }
+html,
 body{
-  background-image: url(/image/container_bg.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-image: url(/image/Background.png);
 }
 
 /*header*/
+header {
+  box-shadow: black 3px 3px 3px;
+  width: 100%;
+  height: 10%;
+}
 .logo {
-  -webkit-box-shadow: black 3px 3px 3px;
-          box-shadow: black 3px 3px 3px;
+  height: 100%;
 }
 
 .logo img {
-  width: 200px;
-  height: auto;
+  margin-left: 2%;
+  height: 100%;
 }
-
 /*article*/
 form {
   display: inline-block;
   position: relative;
-  border: 1px solid;
   left: 38vw;
   top: 20vh;
   padding: 50px;
-  padding-top: 10vh;
+  padding-top: 1vh;
   padding-bottom: 10vh;
-  background-color: rgba(248, 238, 230, 0.2);
-  border-radius: 10px;
+  animation: fadein 1s;
+  text-align: center;
+  /* background-color: rgba(248, 238, 230, 0.2); */
+}
+form label{
+  font-size: 2rem;
 }
 
 input[type=text],
@@ -41,21 +48,41 @@ input[type=email] {
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 button {
-  background-color: skyblue;
+  background-color: #fff;
   color: black;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  margin-top: 5%;
+  border: #d2baff solid 3px;
+  border-radius: 23px;
+  box-shadow: 0px 10px 15px #d2baff;
+  transition: all 0.3s ease 0s;
   cursor: pointer;
   width: 175px;
 }
-
-button :hover {
-  opacity: 0.8;
+#gologin{
+  padding: 20px 10px;
+  width: 350px;
+}
+button:hover {
+  background-color: #d2baff;
+  box-shadow: 0px 20px 20px rgb(223, 222, 222);
+  color: #fff;
+  transform: translateY(-7px);
+  border: #fff solid 5px;
+}
+@keyframes fadein { 
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
 }
 /*# sourceMappingURL=signup.css.map */
