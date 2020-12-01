@@ -16,7 +16,9 @@ header {
   width: 100%;
   height: 10%;
 }
-
+a{
+  text-decoration: none;
+}
 /*header*/
 .logo {
   height: 100%;
