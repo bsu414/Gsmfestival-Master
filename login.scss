@@ -1,0 +1,69 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*login*/
+#login {
+    width: 250px;
+    height: 200px;
+}
+
+input[type=text],
+input[type=password] {
+    width: 250px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+
+    :hover {
+        opacity: 0.8;
+    }
+}
+
+
+
+.title {
+    position: absolute;
+    top: -25%;
+    left: 20%;
+}
+
+#login {
+    position: absolute;
+    left: 45%;
+    top: 45%;
+}
+
+/*header*/
+.logo {
+    box-shadow: black 3px 3px 3px;
+
+    img {
+
+        width: 200px;
+        height: auto;
+    }
+}
+
+
+
+/*footer*/
+footer {
+    position: absolute;
+    right: 45%;
+    bottom: 0%;
+}

@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+.logo {
+    box-shadow: black 3px 3px 3px;
+
+    img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+/*article*/
+form {
+    display: inline-block;
+    position: relative;
+    border: 1px solid;
+    left: 38vw;
+    top: 20vh;
+    padding: 50px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: rgba(248, 238, 230, 0.2);
+    border-radius: 10px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+    width: 350px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: skyblue;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 175px;
+
+    :hover {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url(/image/container_bg.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+/*header*/
+.logo {
+  -webkit-box-shadow: black 3px 3px 3px;
+          box-shadow: black 3px 3px 3px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+/*article*/
+form {
+  display: inline-block;
+  position: relative;
+  border: 1px solid;
+  left: 38vw;
+  top: 20vh;
+  padding: 50px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  background-color: rgba(248, 238, 230, 0.2);
+  border-radius: 10px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email] {
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  background-color: skyblue;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 175px;
+}
+
+button :hover {
+  opacity: 0.8;
+}
+/*# sourceMappingURL=signup.css.map */

@@ -1,0 +1,129 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url(/Gsmfestival-Master/image/Background.png);
+}
+
+header {
+  box-shadow: black 3px 3px 3px;
+  width: 100%;
+  height: 10%;
+}
+
+/*header*/
+.logo {
+  height: 100%;
+}
+
+/*Gsm_logo*/
+.logo img {
+  margin-left: 2%;
+  height: 100%;
+}
+
+section {
+  width: 100%;
+  height: 85%;
+}
+
+/*login*/
+.form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  width: 300px;
+}
+
+input[type=text],
+input[type=password] {
+  margin: 0 auto;
+  width: 100%;
+  padding: 12px 20px;
+  display: block;
+  border: 1px solid #ccc;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button_login, .button_signup {
+  width: 100%;
+}
+
+.button_login {
+
+  margin-top: 1%;
+  height: 35px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: #d2baff solid 3px;
+  border-radius: 45px;
+  box-shadow: 0px 10px 15px #d2baff;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.button_login:hover {
+  background-color: #d2baff;
+  box-shadow: 0px 20px 20px rgb(223, 222, 222);
+  color: #fff;
+  transform: translateY(-7px);
+  border: #fff solid 5px;
+}
+
+.button_signup {
+  margin-top: 3%;
+  height: 35px;
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 15px;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: #d2baff solid 3px;
+  border-radius: 45px;
+  box-shadow: 0px 10px 15px #d2baff;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.button_signup:hover {
+  background-color: #d2baff;
+  box-shadow: 0px 20px 20px rgb(223, 222, 222);
+  color: #fff;
+  transform: translateY(-7px);
+  border: #fff solid 5px;
+}
+
+.title {
+  padding-bottom: 10%;
+  text-align: center;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  height: 5%;
+}
+
+/*# sourceMappingURL=login.css.map */
