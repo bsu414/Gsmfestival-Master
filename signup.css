@@ -28,16 +28,18 @@ form {
   display: inline-block;
   position: relative;
   left: 38vw;
-  top: 20vh;
+  top: 15vh;
   padding: 50px;
   padding-top: 1vh;
   padding-bottom: 10vh;
   animation: fadein 1s;
   text-align: center;
+  width: 350px;
   /* background-color: rgba(248, 238, 230, 0.2); */
 }
-form label{
+form label h1{
   font-size: 2rem;
+  padding-bottom: 10%;
 }
 
 input[type=text],
@@ -65,6 +67,10 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   width: 175px;
+}
+button[type=submit]{
+  float: right;
+  text-align: center;
 }
 #gologin{
   padding: 20px 10px;
