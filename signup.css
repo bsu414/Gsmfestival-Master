@@ -26,11 +26,10 @@ header {
 /*article*/
 form {
   display: inline-block;
-  position: relative;
-  left: 38vw;
-  top: 15vh;
+  justify-content: center;
+  margin-left: 37vw;
   padding: 50px;
-  padding-top: 1vh;
+  padding-top: 7vh;
   padding-bottom: 10vh;
   animation: fadein 1s;
   text-align: center;
