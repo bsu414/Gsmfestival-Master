@@ -18,7 +18,7 @@
         </div>
     </header>
     <section>
-        <form>
+        <form class="form">
             <label for="information">
                 <h1>회원가입</h1>
             </label>
@@ -36,6 +36,9 @@
             <button type="button" onclick="location.href='login.html'" id="gologin">로그인으로 이동하기</button>
         </form>
     </section>
+    <footer>
+        <h6>Copyright by 엉덩이 딱 붙여</h6>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script>
         $( function () {
@@ -55,6 +58,7 @@
 
             } );
         } );
+
         function check() {
 
             alert( document.getElementById( "email" ).value );

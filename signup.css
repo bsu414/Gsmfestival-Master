@@ -27,13 +27,14 @@ header {
 form {
   display: inline-block;
   justify-content: center;
-  margin-left: 37vw;
+  margin-left: 38vw;
   padding: 50px;
   padding-top: 7vh;
   padding-bottom: 10vh;
   animation: fadein 1s;
   text-align: center;
   width: 350px;
+  min-height: 659px;
   /* background-color: rgba(248, 238, 230, 0.2); */
 }
 form label h1{
@@ -89,5 +90,9 @@ button:hover {
   to {
       opacity:1;
   }
+}
+footer{
+  text-align: center;
+  justify-content: space-between;
 }
 /*# sourceMappingURL=signup.css.map */
