@@ -32,7 +32,7 @@ form {
   justify-content: center;
   margin-left: 38vw;
   padding: 50px;
-  padding-top: 7vh;
+  padding-top: 12vh;
   padding-bottom: 10vh;
   animation: fadein 1s;
   text-align: center;
@@ -100,8 +100,11 @@ button:hover {
     opacity: 1;
   }
 }
-
+section {
+  height: 85%;
+}
 footer {
+  height: 5%;
   text-align: center;
   justify-content: space-between;
 }
