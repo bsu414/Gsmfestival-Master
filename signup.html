@@ -6,66 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>야자 자리이동 - 회원가입</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="data:image/png;base64,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"
-                    alt="">
+                <img src="/image/gsm_logo.png" alt="">
             </a>
         </div>
     </header>
     <section>
         <form>
+            <label for="information">
+                <h1>회원가입</h1>
+            </label>
             <input type="text" id="class"" placeholder=" 학번">
-            <br>
             <input type="text" id="name" placeholder="이름">
-            <br>
             <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)">
-            <br>
             <input type="text" id="pw" placeholder="비밀번호" />
-            <br>
             <input type="text" id="pwc" placeholder="비밀번호 확인" />
-            <br>
             <font id="check" size="2"></font>
             <button type="reset">다시적기</button>
-            <button type="submit">제출하기</button>
+            <button type="submit">가입하기</button>
+            <br>
+            <br>
+            <span>이미 아이디가 있나요?</span>
+            <button type="button" onclick="location.href='login.html'" id="gologin">로그인으로 이동하기</button>
         </form>
     </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script>
-        $( function () {
-            $( '#pw' ).keyup( function () {
-                $( '#check' ).html( '' );
-            } );
+        $(function () {
+            $('#pw').keyup(function () {
+                $('#check').html('');
+            });
 
-            $( '#pwc' ).keyup( function () {
+            $('#pwc').keyup(function () {
 
-                if ( $( '#pw' ).val() != $( '#pwc' ).val() ) {
-                    $( '#check' ).html( '비밀번호 일치하지 않음<br><br>' );
-                    $( '#check' ).attr( 'color', '#f82a2aa3' );
+                if ($('#pw').val() != $('#pwc').val()) {
+                    $('#check').html('비밀번호 일치하지 않음<br><br>');
+                    $('#check').attr('color', '#f82a2aa3');
                 } else {
-                    $( '#check' ).html( '비밀번호 일치함<br><br>' );
-                    $( '#check' ).attr( 'color', '#199894b3' );
+                    $('#check').html('비밀번호 일치함<br><br>');
+                    $('#check').attr('color', '#199894b3');
                 }
 
-            } );
-        } );
+            });
+        });
+
         function check() {
 
-            alert( document.getElementById( "email" ).value );
+            alert(document.getElementById("email").value);
 
-            var email = document.getElementById( "email" ).value;
+            var email = document.getElementById("email").value;
 
             var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
 
-            if ( exptext.test( email ) == false ) {
+            if (exptext.test(email) == false) {
 
 
-                alert( "이 메일형식이 올바르지 않습니다." );
+                alert("이 메일형식이 올바르지 않습니다.");
 
                 document.addjoin.email.focus();
 
