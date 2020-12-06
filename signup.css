@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
 }
+
 html,
-body{
+body {
   width: 100%;
   height: 100%;
   background-image: url(/image/Background.png);
@@ -11,10 +12,12 @@ body{
 
 /*header*/
 header {
-  box-shadow: black 3px 3px 3px;
+  -webkit-box-shadow: black 3px 3px 3px;
+          box-shadow: black 3px 3px 3px;
   width: 100%;
   height: 10%;
 }
+
 .logo {
   height: 100%;
 }
@@ -23,21 +26,25 @@ header {
   margin-left: 2%;
   height: 100%;
 }
+
 /*article*/
 form {
   display: inline-block;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 38vw;
   padding: 50px;
   padding-top: 7vh;
   padding-bottom: 10vh;
-  animation: fadein 1s;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
   text-align: center;
   width: 350px;
   min-height: 659px;
-  /* background-color: rgba(248, 238, 230, 0.2); */
 }
-form label h1{
+
+form label h1 {
   font-size: 2rem;
   padding-bottom: 10%;
 }
@@ -63,35 +70,55 @@ button {
   margin-top: 5%;
   border: #d2baff solid 3px;
   border-radius: 23px;
-  box-shadow: 0px 10px 15px #d2baff;
+  -webkit-box-shadow: 0px 10px 15px #d2baff;
+          box-shadow: 0px 10px 15px #d2baff;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   width: 175px;
 }
-button[type=submit]{
+
+button:hover {
+  background-color: #d2baff;
+  -webkit-box-shadow: 0px 20px 20px #dfdede;
+          box-shadow: 0px 20px 20px #dfdede;
+  color: #fff;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+button[type=submit] {
   float: right;
   text-align: center;
 }
-#gologin{
+
+#gologin {
   padding: 20px 10px;
   width: 350px;
 }
-button:hover {
-  background-color: #d2baff;
-  box-shadow: 0px 20px 20px rgb(223, 222, 222);
-  color: #fff;
-  transform: translateY(-7px);
+
+footer {
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-@keyframes fadein { 
+
+@-webkit-keyframes fadein {
   from {
-      opacity:0;
+    opacity: 0;
   }
   to {
-      opacity:1;
+    opacity: 1;
   }
 }
-footer{
-  text-align: center;
-  justify-content: space-between;
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=signup.css.map */
