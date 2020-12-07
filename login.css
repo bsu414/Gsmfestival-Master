@@ -8,23 +8,24 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-image: url(/Gsmfestival-Master/image/Background.png);
+  background-image: url(/image/Background.png);
 }
 
 header {
-  box-shadow: black 3px 3px 3px;
+  -webkit-box-shadow: black 3px 3px 3px;
+          box-shadow: black 3px 3px 3px;
   width: 100%;
   height: 10%;
 }
-a{
+
+a {
   text-decoration: none;
 }
-/*header*/
+
 .logo {
   height: 100%;
 }
 
-/*Gsm_logo*/
 .logo img {
   margin-left: 2%;
   height: 100%;
@@ -38,9 +39,17 @@ section {
 /*login*/
 .form {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
 }
 
 #login {
@@ -55,7 +64,7 @@ input[type=password] {
   display: block;
   border: 1px solid #ccc;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0 auto;
 }
 
@@ -64,12 +73,12 @@ input[type=password] {
   margin-top: 20px;
 }
 
-.button_login, .button_signup {
+.button_login,
+.button_signup {
   width: 100%;
 }
 
 .button_login {
-
   margin-top: 1%;
   height: 35px;
   font-family: 'Nanum Gothic', sans-serif;
@@ -80,16 +89,20 @@ input[type=password] {
   background-color: #fff;
   border: #d2baff solid 3px;
   border-radius: 45px;
-  box-shadow: 0px 10px 15px #d2baff;
+  -webkit-box-shadow: 0px 10px 15px #d2baff;
+          box-shadow: 0px 10px 15px #d2baff;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 
 .button_login:hover {
   background-color: #d2baff;
-  box-shadow: 0px 20px 20px rgb(223, 222, 222);
+  -webkit-box-shadow: 0px 20px 20px #dfdede;
+          box-shadow: 0px 20px 20px #dfdede;
   color: #fff;
-  transform: translateY(-7px);
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .button_signup {
@@ -103,19 +116,24 @@ input[type=password] {
   background-color: #fff;
   border: #d2baff solid 3px;
   border-radius: 45px;
-  box-shadow: 0px 10px 15px #d2baff;
+  -webkit-box-shadow: 0px 10px 15px #d2baff;
+          box-shadow: 0px 10px 15px #d2baff;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 
 .button_signup:hover {
   background-color: #d2baff;
-  box-shadow: 0px 20px 20px rgb(223, 222, 222);
+  -webkit-box-shadow: 0px 20px 20px #dfdede;
+          box-shadow: 0px 20px 20px #dfdede;
   color: #fff;
-  transform: translateY(-7px);
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .title {
+  font-size: 2rem;
   padding-bottom: 10%;
   text-align: center;
 }
@@ -126,4 +144,21 @@ footer {
   height: 5%;
 }
 
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=login.css.map */

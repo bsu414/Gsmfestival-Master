@@ -6,30 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>야자 자리이동 - 회원가입</title>
     <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="/Gsmfestival-Master/image/gsm_logo.png" alt="">
+                <img src="/image/gsm_logo.png" alt="">
             </a>
         </div>
     </header>
     <section>
         <form class="form">
-            <label for="information">
-                <h1>회원가입</h1>
-            </label>
-            <input type="text" id="class"" placeholder=" 학번">
-            <input type="text" id="name" placeholder="이름">
-            <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)">
-            <input type="text" id="pw" placeholder="비밀번호" />
-            <input type="text" id="pwc" placeholder="비밀번호 확인" />
+            <h1>회원가입</h1>
+            <div class="input">
+                <input type="text" id="class"" placeholder=" 학번" required>
+                <input type="text" id="name" placeholder="이름" required>
+                <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)" required>
+                <input type="password" id="pw" placeholder="비밀번호" required />
+                <input type="password" id="pwc" placeholder="비밀번호 확인" required />
+            </div>
             <font id="check" size="2"></font>
-            <button type="reset">다시적기</button>
-            <button type="submit">가입하기</button>
+            <div class="btn">
+                <button type="reset">다시적기</button>
+                <button type="submit">가입하기</button>
+            </div>
             <br>
             <br>
             <span>이미 아이디가 있나요?</span>
@@ -41,36 +42,36 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script>
-        $(function () {
-            $('#pw').keyup(function () {
-                $('#check').html('');
-            });
+        $( function () {
+            $( '#pw' ).keyup( function () {
+                $( '#check' ).html( '' );
+            } );
 
-            $('#pwc').keyup(function () {
+            $( '#pwc' ).keyup( function () {
 
-                if ($('#pw').val() != $('#pwc').val()) {
-                    $('#check').html('비밀번호 일치하지 않음<br><br>');
-                    $('#check').attr('color', '#f82a2aa3');
+                if ( $( '#pw' ).val() != $( '#pwc' ).val() ) {
+                    $( '#check' ).html( '비밀번호 일치하지 않음<br><br>' );
+                    $( '#check' ).attr( 'color', '#f82a2aa3' );
                 } else {
-                    $('#check').html('비밀번호 일치함<br><br>');
-                    $('#check').attr('color', '#199894b3');
+                    $( '#check' ).html( '비밀번호 일치함<br><br>' );
+                    $( '#check' ).attr( 'color', '#199894b3' );
                 }
 
-            });
-        });
+            } );
+        } );
 
         function check() {
 
-            alert(document.getElementById("email").value);
+            alert( document.getElementById( "email" ).value );
 
-            var email = document.getElementById("email").value;
+            var email = document.getElementById( "email" ).value;
 
             var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
 
-            if (exptext.test(email) == false) {
+            if ( exptext.test( email ) == false ) {
 
 
-                alert("이 메일형식이 올바르지 않습니다.");
+                alert( "이 메일형식이 올바르지 않습니다." );
 
                 document.addjoin.email.focus();
 
