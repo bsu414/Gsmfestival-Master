@@ -16,7 +16,9 @@ body {
 }
 
 /*header*/
-
+header{
+    animation: fadein 1s;
+}
 .logo {
     img {
         width: 200px;
@@ -99,4 +101,13 @@ footer {
     position: absolute;
     right: 45%;
     bottom: 0%;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

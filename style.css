@@ -16,6 +16,11 @@ body {
 }
 
 /*header*/
+header {
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
+}
+
 .logo img {
   width: 200px;
   height: auto;
@@ -108,5 +113,23 @@ footer {
   position: absolute;
   right: 45%;
   bottom: 0%;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */

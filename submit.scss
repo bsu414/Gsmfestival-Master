@@ -45,10 +45,7 @@ form {
         padding-bottom: 10%;
     }
 }
-
-input[type=text],
-input[type=password],
-input[type=email] {
+select {
     width: 350px;
     padding: 12px 20px;
     margin: 8px 0;
@@ -57,11 +54,20 @@ input[type=email] {
     border-radius: 10px;
     box-sizing: border-box;
 }
-
+input[type=text] {
+    width: 350px;
+    height: 120px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
 button {
     $color: #d2baff !global;
     $color2: #fff !global;
-    background-color:$color2;
+    background-color: $color2;
     color: black;
     padding: 14px 20px;
     margin: 8px 0;
@@ -72,7 +78,6 @@ button {
     transition: all 0.3s ease 0s;
     cursor: pointer;
     width: 175px;
-    font-family: 'Nanum Gothic'sans-serif;
 
     &:hover {
         background-color: $color;
