@@ -48,6 +48,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-animation: fadein 1s;
+          animation: fadein 1s;
 }
 
 #login {
@@ -101,7 +103,6 @@ input[type=password] {
   color: #fff;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
-  border: #fff solid 5px;
 }
 
 .button_signup {
@@ -129,7 +130,6 @@ input[type=password] {
   color: #fff;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
-  border: #fff solid 5px;
 }
 
 .title {
@@ -142,5 +142,23 @@ input[type=password] {
 footer {
   text-align: center;
   height: 5%;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=login.css.map */

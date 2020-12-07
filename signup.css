@@ -44,7 +44,7 @@ form {
   min-height: 659px;
 }
 
-form label h1 {
+form h1 {
   font-size: 2rem;
   padding-bottom: 10%;
 }

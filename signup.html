@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>야자 자리이동 - 회원가입</title>
     <link rel="stylesheet" href="signup.css">
-    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 
 <body>
@@ -19,17 +18,19 @@
     </header>
     <section>
         <form class="form">
-            <label for="information">
-                <h1>회원가입</h1>
-            </label>
-            <input type="text" id="class"" placeholder=" 학번" required>
-            <input type="text" id="name" placeholder="이름" required>
-            <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)" required>
-            <input type="password" id="pw" placeholder="비밀번호" required />
-            <input type="password" id="pwc" placeholder="비밀번호 확인" required />
+            <h1>회원가입</h1>
+            <div class="input">
+                <input type="text" id="class"" placeholder=" 학번" required>
+                <input type="text" id="name" placeholder="이름" required>
+                <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)" required>
+                <input type="password" id="pw" placeholder="비밀번호" required />
+                <input type="password" id="pwc" placeholder="비밀번호 확인" required />
+            </div>
             <font id="check" size="2"></font>
-            <button type="reset">다시적기</button>
-            <button type="submit">가입하기</button>
+            <div class="btn">
+                <button type="reset">다시적기</button>
+                <button type="submit">가입하기</button>
+            </div>
             <br>
             <br>
             <span>이미 아이디가 있나요?</span>
