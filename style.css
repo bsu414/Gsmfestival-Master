@@ -16,9 +16,9 @@ body {
 }
 
 /*header*/
-header {
-  -webkit-animation: fadein 1s;
-          animation: fadein 1s;
+.animate__lightSpeedInLeft {
+  -webkit-animation: lightSpeedInLeft 1s;
+          animation: lightSpeedInLeft 1s;
 }
 
 .logo img {
@@ -103,9 +103,8 @@ header {
   -webkit-box-shadow: 0px 20px 20px #dfdede;
           box-shadow: 0px 20px 20px #dfdede;
   color: #fff;
-  -webkit-transform: translateY(-7px);
-          transform: translateY(-7px);
-  border: #fff solid 5px;
+  -webkit-animation: rubberBand 1s infinite;
+          animation: rubberBand 1s infinite;
 }
 
 /*footer*/
