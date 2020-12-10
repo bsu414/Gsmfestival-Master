@@ -79,6 +79,7 @@ button {
         box-shadow: 0px 20px 20px rgb(223, 222, 222);
         color: $color2;
         transform: translateY(-7px);
+        animation: pulse 1s infinite;
     }
 }
 

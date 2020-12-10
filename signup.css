@@ -86,6 +86,8 @@ button:hover {
   color: #fff;
   -webkit-transform: translateY(-7px);
           transform: translateY(-7px);
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
 }
 
 button[type=submit] {
