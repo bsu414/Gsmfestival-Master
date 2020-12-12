@@ -7,6 +7,7 @@ a {
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
+  color: #000;
 }
 
 html,
@@ -31,8 +32,17 @@ body {
   float: right;
   font-size: 15px;
   position: relative;
-  top: 10px;
+  top: 15px;
   right: 80px;
+}
+
+.user_info{
+  padding: 15px;
+  float: right;
+  font-size: 15px;
+  position: relative;
+  top: 15px;
+  right: 5%;
 }
 
 .login {
