@@ -3,40 +3,116 @@
     padding: 0;
 }
 
-/*header*/
-.logo {
-    box-shadow: black 3px 3px 3px;
+a {
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
 
+html,
+body {
+    font-family: 'Nanum Gothic'sans-serif;
+    background-image: url(image/Background.png);
+}
+
+/*header*/
+.animate__lightSpeedInLeft{
+    animation: lightSpeedInLeft 1s;
+}
+
+.logo {
     img {
         width: 200px;
         height: auto;
     }
 }
-.login,
-.su {
-    border: black 1px solid;
+
+.user {
     padding: 15px;
     float: right;
-    border-radius: 10%;
-    box-shadow: black 3px 3px;
-    color: black;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+    right: 80px;
 }
 
 .login {
     position: relative;
-    right: 0px;
+    top: 23px;
+    right: 130px;
 }
 
-.su {
+.main_ment {
+    font-family: 'Nanum Gothic'sans-serif;
+    /*Title opacity*/
+    opacity: 100%;
+    color: black;
     position: relative;
-    top: 0;
-    right: 0;
+    left: 410px;
+    top: 450px;
+    font-weight: 500;
+    font-size: 190px;
+    line-height: 60px;
 }
-/*aside*/
+
+.Desk_img {
+    position: relative;
+    top: -70px;
+    left: 0px;
+    opacity: 30%;
+}
+
+.section_wrap {
+    width: 100%;
+    height: 800px;
+}
+
+.wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    margin-top: 1%;
+    width: 180px;
+    height: 85px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 18px;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: #d2baff solid 3px;
+    border-radius: 45px;
+    box-shadow: 0px 10px 15px #d2baff;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #d2baff;
+        box-shadow: 0px 20px 20px rgb(223, 222, 222);
+        color: #fff;
+        //transform: translateY(-7px);
+        //border: #fff solid 5px;
+        animation: rubberBand 1s infinite;
+    }
+}
 
 /*footer*/
 footer {
     position: absolute;
     right: 45%;
     bottom: 0%;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

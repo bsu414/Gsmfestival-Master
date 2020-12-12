@@ -6,25 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>야자 자리이동 - 회원가입</title>
     <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="/Gsmfestival-Master/image/gsm_logo.png" alt="">
+                <img src="/image/gsm_logo.png" alt="">
             </a>
         </div>
     </header>
     <section>
-        <form class="form">
+        <form class="form" method="POST" action="/loginpage">
             <h1>회원가입</h1>
             <div class="input">
-                <input type="text" id="class"" placeholder=" 학번" required>
-                <input type="text" id="name" placeholder="이름" required>
-                <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)" required>
-                <input type="password" id="pw" placeholder="비밀번호" required />
-                <input type="password" id="pwc" placeholder="비밀번호 확인" required />
+                <input type="text" id="class"" placeholder=" 학번" name="classnum" required>
+                <input type="text" id="name" placeholder="이름" name="username" required>
+                <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)" name="email" required>
+                <input type="password" id="pw" placeholder="비밀번호" name="password" required />
+                <input type="password" id="pwc" placeholder="비밀번호 확인" name="password" required />
             </div>
             <font id="check" size="2"></font>
             <div class="btn">
