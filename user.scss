@@ -27,13 +27,11 @@ header {
 
 .logo {
     height: 100%;
+    img {
+        margin-left: 2%;
+        height: 100%;
+    }
 }
-
-.logo img {
-    margin-left: 2%;
-    height: 100%;
-}
-
 section {
     height: 85%;
     max-height: 600px;
@@ -45,11 +43,12 @@ section {
     background: #fff;
     padding: 20px 30px 5px;
     margin: 220px auto;
+    .btn-group {
+        float: right;
+    }
 }
 
-.table-wrapper .btn-group {
-    float: right;
-}
+
 
 .table-title .btn {
     margin-top: 20px;
