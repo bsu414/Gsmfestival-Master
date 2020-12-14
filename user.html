@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="user.css">
+    <link rel="java_script" href="userInfo.js">
     <title>학습실 신청</title>
 </head>
 
@@ -17,7 +18,86 @@
         </div>
     </header>
     <section>
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h2>자리이동 <b>신청</b> 내역</h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="btn-group" data-toggle="buttons">
+                            <label class="btn btn-info active">
+                                <input type="radio" name="status" value="all" checked="checked"> 모두
+                            </label>
+                            <label class="btn btn-success">
+                                <input type="radio" name="status" value="active"> 실습실
+                            </label>
+                            <label class="btn btn-warning">
+                                <input type="radio" name="status" value="inactive"> 교실
+                            </label>
+                            <label class="btn btn-danger">
+                                <input type="radio" name="status" value="expired"> 기타
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
 
+            </script>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>대표자 이름</th>
+                        <th>사용일</th>
+                        <th>인원</th>
+                        <th>목적</th>
+                        <th>사용 교실</th>
+                        <th>상태</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-status="active">
+                        <td>1</td>
+                        <td><a href="">1407 나예준</a></td>
+                        <td>04/10/2020</td>
+                        <td><span class="label label-success">3명</span></td>
+                        <td>GSM 페스티벌</td>
+                        <td>프로그래밍2실</td>
+                        <td><a href="" class="btn btn-sm manage">사용 중</a></td>
+                    </tr>
+                    <tr data-status="inactive">
+                        <td>2</td>
+                        <td><a href="">1101 배태현</a></td>
+                        <td>05/08/2020</td>
+                        <td><span class="label label-warning">5명 </span></td>
+                        <td>인공지능 대회</td>
+                        <td>홈베이스</td>
+                        <td><a href="#" class="btn btn-sm manage">사용 중</a></td>
+                    </tr>
+                    <tr data-status="active">
+                        <td>3</td>
+                        <td><a href="">1307 박선우</a></td>
+                        <td>11/05/2020</td>
+                        <td><span class="label label-success">5명</span></td>
+                        <td>GSM 페스티벌</td>
+                        <td>프로그래밍1실</td>
+                        <td><a href="#" class="btn btn-sm manage">사용 중</a></td>
+                    </tr>
+                    <tr data-status="expired">
+                        <td>4</td>
+                        <td><a href="">1207 박선우</a></td>
+                        <td>06/09/2020</td>
+                        <td><span class="label label-danger">6명</span></td>
+                        <td>대회 준비</td>
+                        <td>1-4</td>
+                        <td><a href="#" class="btn btn-sm manage_an">식사 중</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
     </section>
     <footer>
 
