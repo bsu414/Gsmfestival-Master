@@ -31,14 +31,36 @@ body {
   float: right;
   font-size: 15px;
   position: relative;
-  top: 10px;
+  top: 15px;
   right: 80px;
+}
+
+.user_info {
+  padding: 15px;
+  float: right;
+  font-size: 15px;
+  position: relative;
+  top: 15px;
+  right: 5%;
 }
 
 .login {
   position: relative;
   top: 23px;
   right: 130px;
+}
+
+.main {
+  font-family: 'Nanum Gothic'sans-serif;
+  /*Title opacity*/
+  opacity: 100%;
+  color: black;
+  position: relative;
+  left: 700px;
+  top: 360px;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 60px;
 }
 
 .main_ment {
@@ -95,6 +117,7 @@ body {
           box-shadow: 0px 10px 15px #d2baff;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  z-index: 99;
   cursor: pointer;
 }
 
