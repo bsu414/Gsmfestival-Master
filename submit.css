@@ -10,12 +10,15 @@ body {
   background-image: url(/image/Background.png);
 }
 
-/*header*/
 header {
   -webkit-box-shadow: black 3px 3px 3px;
           box-shadow: black 3px 3px 3px;
   width: 100%;
   height: 10%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -28,23 +31,28 @@ header {
 }
 
 /*article*/
-form {
-  display: inline-block;
+section {
+  width: 100vw;
+  height: 85vh;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 38vw;
-  padding: 50px;
-  padding-top: 7vh;
-  padding-bottom: 10vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 90vh;
   -webkit-animation: fadein 1s;
           animation: fadein 1s;
   text-align: center;
-  width: 350px;
-  min-height: 659px;
 }
 
-form h1 {
+.form h1 {
   font-size: 2rem;
   padding-bottom: 10%;
 }
@@ -53,7 +61,7 @@ select {
   width: 350px;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
+  display: block;
   border: 1px solid #ccc;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
@@ -61,11 +69,11 @@ select {
 }
 
 input[type=text] {
-  width: 350px;
+  width: 100%;
   height: 120px;
   padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
+  margin: 12px auto;
+  display: block;
   border: 1px solid #ccc;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
@@ -86,6 +94,7 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   width: 175px;
+  font-family: 'Nanum Gothic'sans-serif;
 }
 
 button:hover {
@@ -108,6 +117,7 @@ button[type=submit] {
 }
 
 footer {
+  height: 5%;
   text-align: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

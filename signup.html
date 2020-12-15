@@ -21,23 +21,27 @@
     </header>
     <section>
         <form class="form" method="POST" action="/loginpage">
-            <h1>회원가입</h1>
-            <div class="input">
-                <input type="text" id="class"" placeholder=" 학번" name="classnum" required>
-                <input type="text" id="name" placeholder="이름" name="username" required>
-                <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)" name="email" required>
-                <input type="password" id="pw" placeholder="비밀번호" name="password" required />
-                <input type="password" id="pwc" placeholder="비밀번호 확인" name="password" required />
+            <div class="index">
+                <h1>회원가입</h1>
+                <div class="input">
+                    <input type="text" id="class"" placeholder=" 학번" name="classnum" required>
+                    <input type="text" id="name" placeholder="이름" name="username" required>
+                    <input type="email" id="email" placeholder="이메일 (학교이메일을 입력해주세요)" name="email" required>
+                    <input type="password" id="pw" placeholder="비밀번호" name="password" required />
+                    <input type="password" id="pwc" placeholder="비밀번호 확인" name="password" required />
+                </div>
+                <font id="check" size="2"></font>
+                <div class="btn">
+                    <button type="reset">다시적기</button>
+                    <button type="submit">가입하기</button>
+                </div>
+                <br>
+                <br>
+                <span>이미 아이디가 있나요?</span>
+                <div class="btn">
+                    <button type="button" onclick="location.href='login.html'" id="gologin">로그인으로 이동하기</button>
+                </div>
             </div>
-            <font id="check" size="2"></font>
-            <div class="btn">
-                <button type="reset">다시적기</button>
-                <button type="submit">가입하기</button>
-            </div>
-            <br>
-            <br>
-            <span>이미 아이디가 있나요?</span>
-            <button type="button" onclick="location.href='login.html'" id="gologin">로그인으로 이동하기</button>
         </form>
     </section>
     <footer>
