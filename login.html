@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>야자 자리이동 - 로그인</title>
     <link rel="stylesheet" href="login.css">
-    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="/node_modules/animate.css/animate.css">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="../index/">
+            <a href="index.html">
                 <img src="/image/gsm_logo.png" alt="">
             </a>
         </div>
@@ -29,8 +29,8 @@
                 <input type="password" placeholder="password" name="password" required>
                 <div class="btn">
                     <script type="text/javascript"> function goReplace( str ) { location.replace( str ); } </script>
-                    <button class="button_login" onclick="location.href='#'">login</button>
-                    <button class="button_signup" onclick="goReplace('../signup/')">signup</button>
+                    <button class="button_login" type="submit">login</button>
+                    <button class="button_signup" onclick="goReplace('signup.html')">signup</button>
                 </div>
             </div>
         </form>
